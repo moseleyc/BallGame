@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Final Assignment</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Final Assignment</h1>
+        </header>
+        <main>
+            <section>
+                <div id="gameArea" class="gameArea">
+                    <div>
+                        <canvas id="gameCanvas" class="gameCanvas" width=450 height=600>Your browser does not support the HTML5 canvas tag.</canvas>
+                    </div>
+                    <div id="gameControls" class="gameControls">
+                        <div id="gameScore" class="gameScore">
+                            <p>Score: 0</p>
+                        </div>
+                        <div id="gameDifficulty" class="gameDifficulty">
+                            <p>Difficulty: 0</p>
+                        </div>
+                        <div id="gameButtons" class="gameButtons">
+                            <button id="newGameBtn" class="newGameBtn">New Game</button>
+                            <button id="stopGameBtn" class="stopGameBtn">Stop Game</button>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2019 Cameron Moseley</p>
+        </footer>
+    </div>
+    <!-- IE Warning -->
+    <div class="ie-warning">
+        <div class="ie-warning-text-container">
+            <h1>Change Your Browser!!!</h1>
+            <p>This assignment requires a modern browser.</p>
+            <h2>BCIT Lab Computer</h2>
+            <p>Remember to change BCIT's lab computer's default browser from IE11 to any other browser (Edge, Firefox or Chrome).</p>
+            <h2>Your Personal Computer</h2>
+            <p>I strongly recommend you develop your applications in a modern browser such as Firefox, Google Chrome or even Microsoft's Edge Browser or Apple's Safari.</p>
+            <p class="last-item-in-ie-warning-text-container">If your application requires IE 8, 9, 10 or 11 support then consider adding fallback code for these legacy browsers after initially developing your application in a modern browser.</p>
+        </div>
+    </div>
+    <!-- End IE Warning -->
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/fabric.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+﻿@charset "utf-8";
+
+/* Resets */
+
+/* Paul Irish - Box Sizing Reset 
+   - https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #353535;
+}
+
+header, footer, main, article, section {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 nav a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+    font-size: 1.15em;
+}
+
+li {
+    font-size: 1.15em;
+    margin-bottom: 1em;
+}
+
+code {
+    background-color: #eeeeee;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.warning {
+    padding: 16px;
+    background-color: #fdb3b3;
+}
+
+    .warning p {
+        margin: 0;
+    }
+
+    .warning:not(.warning-no-script) {
+        margin-bottom: 1em;
+    }
+
+header {
+    background-color: #f7df1c;
+    padding: 20px;
+}
+
+    header h1 {
+        margin: 0;
+        line-height: 1;
+    }
+
+    header .review-bonus-heading {
+        font-size: 1.35em;
+    }
+
+@media (min-width: 380px) {
+    header .review-bonus-heading {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 480px) {
+    header .review-bonus-heading {
+        font-size: 2em;
+    }
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+@media (min-width: 500px) {
+    .slides,
+    .cycle-slideshow,
+    .pagers {
+        margin-bottom: 20px;
+    }
+
+    .slide-show-container {
+        max-width: 646px;
+        padding: 20px;
+        border: 3px solid #353535;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    padding: 20px;
+    border-top: 1px dotted #858585;
+}
+
+    footer p {
+        font-size: 0.9em;
+        margin-bottom: 4px;
+    }
+
+        footer p:last-child {
+            margin-bottom: 0;
+        }
+
+/* Utility Classes */
+
+.mtb20 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.code-block {
+    background-color: #eeeeee;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: scroll;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* IE Warning */
+.wrapper {
+    display: none;
+}
+
+.ie-warning {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.ie-warning-text-container {
+    color: white;
+    padding: 30px;
+    border: 5px solid red;
+    width: 700px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: -275px;
+}
+
+    .ie-warning-text-container h1 {
+        text-align: center;
+    }
+
+.last-item-in-ie-warning-text-container {
+    margin-bottom: 0;
+}
+
+@supports (grid-area: auto) {
+    .wrapper {
+        display: flex;
+    }
+
+    .ie-warning {
+        display: none;
+    }
+}
+
+
+/* Cameron Final Assignment CSS */
+
+.gameArea {
+    position: fixed;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    //border: 1px solid black;
+    margin: 0 0 0 -300px;
+}
+
+.gameArea > *{
+    position: absolute;
+}
+
+.gameCanvas {
+    position: absolute;
+    //width: 450px;
+    //height: 600px;
+    border: 1px solid black;
+}
+
+.gameControls {
+    position: absolute;
+    right: 0px;
+    width: 150px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.gameControls .gameScore {
+    position: absolute;
+    top: 0px;
+    width: 150px;
+    height: 100px;
+}
+
+.gameControls .gameDifficulty {
+    position: absolute;
+    top: 100px;
+    width: 150px;
+    height: 100px;
+}
+
+.gameButtons {
+    position: absolute;
+    bottom: 0px;
+    width: 150px;
+    height: 100px;
+}
+
+.gameControls .newGameBtn {
+    position: absolute;
+    left: 50%;
+    width: 75px;
+    margin: 0px 0px 0px -37.5px;
+    
+}
+
+.gameControls .stopGameBtn {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 75px;
+    margin: 0px 0px 0px -37.5px;
+}
+
